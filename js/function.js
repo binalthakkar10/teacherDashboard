@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
     /*var fragment = window.location.hash;
     if (fragment) {
         $('a[href="' + fragment + '"]').remodal().open();
@@ -71,7 +70,7 @@ $(document).ready(function(){
             if(assgnTitle!='' && changeDateFormat!=''){
             var assgnId = Math.floor(Math.random() * 20);    
             var assignmentContent = '<h2 class="text-left">'+assgnTitle+'</h2> <h4 class="text-right">Due '+changeDateFormat+'</h4><p>'+assgnDescription+' </p>';
-            $("#assgnmentList").append('<li class="assgnmentDetails"><a href="#'+assgnId+'"><h4>'+assgnTitle+'</h4><h6 >due '+changeDateFormat+'</h6></a></li>');
+            $("#assgnmentList").append('<li class="assgnmentDetails"><a href="#'+assgnId+'" data-id="'+assgnTitle+'"><h4>'+assgnTitle+'</h4><h6 >due '+changeDateFormat+'</h6></a></li>');
                 }
 
             $('#mainContainer').append('<div class="tab-pane" id="'+assgnId+'"><div class="container-fluid"><div class="row"><div class="col-lg-12"><ul class="nav nav-tabs"><li class="active"><a  href="#'+assgnId+'a" data-toggle="tab">Assignment</a></li><li><a href="#'+assgnId+'b" data-toggle="tab">Submission</a></li></ul><div class="tab-content "><div class="tab-pane active" id="'+assgnId+'a"><p>'+assignmentContent+'<p></div><div class="tab-pane studentInfo" id="'+assgnId+'b"></div></div></div></div></div></div></div>');
